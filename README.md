@@ -1,3 +1,6 @@
+## TODO:
+1. Generate group folders, not reference folders
+
 ## How to install
 
 #### Using script (easy)
