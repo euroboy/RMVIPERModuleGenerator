@@ -14,7 +14,8 @@ Go to Application folder, browse to the Xcode application icon. Right-click it a
 
 
 ## Easy to use
-![](/assets/wizard.png)
+![](/assets/wizard1.png)
+![](/assets/wizard2.png)
 
 
 ## VIPER diagram overview
