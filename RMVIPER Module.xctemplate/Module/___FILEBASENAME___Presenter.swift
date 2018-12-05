@@ -14,7 +14,6 @@ class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:id
     var interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol?
     var wireFrame: ___VARIABLE_productName:identifier___WireframeProtocol?
     
-    
 }
 
 extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol

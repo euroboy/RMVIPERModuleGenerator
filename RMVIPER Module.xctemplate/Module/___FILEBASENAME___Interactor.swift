@@ -12,5 +12,4 @@ class ___VARIABLE_productName:identifier___Interactor: ___VARIABLE_productName:i
 {
     var presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol?
     
-    
 }
