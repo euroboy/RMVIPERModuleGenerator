@@ -12,6 +12,6 @@ import Foundation
 
 class ___VARIABLE_productName:identifier___Interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol
 {
-    var presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol!
+    weak var presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol?
     
 }

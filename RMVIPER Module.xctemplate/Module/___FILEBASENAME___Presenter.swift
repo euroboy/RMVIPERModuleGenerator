@@ -12,7 +12,7 @@ import UIKit
 
 class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___PresenterProtocol
 {
-    weak var view: ___VARIABLE_productName:identifier___ViewControllerProtocol!
+    weak var view: ___VARIABLE_productName:identifier___ViewControllerProtocol?
     var interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol?
     var wireFrame: ___VARIABLE_productName:identifier___WireframeProtocol?
     
