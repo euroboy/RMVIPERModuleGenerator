@@ -11,7 +11,7 @@
 import UIKit
 
 //VIEW
-protocol ___VARIABLE_productName:identifier___ViewControllerProtocol
+protocol ___VARIABLE_productName:identifier___ViewControllerProtocol: class
 {
     var presenter: ___VARIABLE_productName:identifier___PresenterProtocol? { get set }
     
@@ -20,7 +20,7 @@ protocol ___VARIABLE_productName:identifier___ViewControllerProtocol
 }
 
 //INTERACTOR
-protocol ___VARIABLE_productName:identifier___InteractorInputProtocol
+protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: class
 {
     var presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol! { get set }
     
@@ -28,14 +28,14 @@ protocol ___VARIABLE_productName:identifier___InteractorInputProtocol
     
 }
 
-protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol
+protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol: class
 {
     // INTERACTOR -> PRESENTER
     
 }
 
 //PRESENTER
-protocol ___VARIABLE_productName:identifier___PresenterProtocol
+protocol ___VARIABLE_productName:identifier___PresenterProtocol: class
 {
     var view: ___VARIABLE_productName:identifier___ViewControllerProtocol! { get set }
     var interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol? { get set }
@@ -46,7 +46,7 @@ protocol ___VARIABLE_productName:identifier___PresenterProtocol
 }
 
 //ROUTER
-protocol ___VARIABLE_productName:identifier___WireframeProtocol
+protocol ___VARIABLE_productName:identifier___WireframeProtocol: class
 {
     
 }
