@@ -1,0 +1,96 @@
+[
+    {
+        "name" : "Detective Fiction",
+        "detail" : "Detective fiction is a subgenre of crime fiction and mystery fiction in which an investigator or a detective—either professional, amateur or retired—investigates a crime, often murder",
+        "books" :
+        [
+            {
+                "name" : "The Cuckoo's Calling",
+                "author" : "Robert Galbraith",
+                "cover" : "cuckoo",
+                "year" : 2013
+            },
+            {
+                "name" : "Murder on the Orient Express",
+                "author" : "Agatha Cristie",
+                "cover" : "orientExpress",
+                "year" : 1934
+            },
+            {
+                "name" : "The Big Sleep",
+                "author" : "Raymond Chandler",
+                "cover" : "bigSleep",
+                "year" : 1939
+            },
+        ]
+    },
+    {
+        "name" : "Horror",
+        "detail" : "Horror is a genre of speculative fiction which is intended to frighten, scare, disgust, or startle its readers by inducing feelings of horror and terror.",
+        "books" :
+        [
+            {
+                "name" : "The Walking Dead",
+                "author" : "Robert Kirkman",
+                "cover" : "walkingDead",
+                "year" : 2019
+            },
+            {
+                "name" : "The Warning",
+                "author" : "James Patterson",
+                "cover" : "warning",
+                "year" : 2019
+            },
+            {
+                "name" : "Hollow Kingdom",
+                "author" : "Kira Jane Buxton",
+                "cover" : "hollowKingdom",
+                "year" : 2019
+            },
+        ]
+    },
+    {
+        "name" : "History",
+        "detail" : "History is one of the three main genres in Western theatre alongside tragedy and comedy, although it originated, in its modern form, thousands of years later than the other primary genres.",
+        "books" :
+        [
+            {
+                "name" : "1776",
+                "author" : "David McCullough",
+                "cover" : "1776",
+                "year" : 2006
+            },
+            {
+                "name" : "The guns of august",
+                "author" : "Barbara W. Tuchman",
+                "cover" : "gunsOfAugust",
+                "year" : 2004
+            }
+        ]
+    },
+    {
+        "name" : "Fairy Tales",
+        "detail" : "Tales are usually imaginative narratives of an event",
+        "books" :
+        [
+            {
+                "name" : "Spin the Dawn",
+                "author" : "Elizabeth Lim",
+                "cover" : "dawn",
+                "year" : 2019
+            },
+            {
+                "name" : "Cheshire Crossing",
+                "author" : "Andy Weir",
+                "cover" : "cheshire",
+                "year" : 2019
+            },
+            {
+                "name" : "The Seekers",
+                "author" : "Hari Panicker",
+                "cover" : "seekers",
+                "year" : 2019
+            },
+        ]
+    },
+]
