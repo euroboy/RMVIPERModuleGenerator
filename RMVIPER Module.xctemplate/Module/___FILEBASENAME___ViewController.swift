@@ -14,6 +14,9 @@ class ___VARIABLE_productName:identifier___ViewController: UIViewController
 {
     var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
     
+    // MARK: - Outlets
+    
+    // MARK: - Life Cycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -22,6 +25,7 @@ class ___VARIABLE_productName:identifier___ViewController: UIViewController
     
 }
 
+// MARK: - Presenter Output
 extension ___VARIABLE_productName:identifier___ViewController: ___VARIABLE_productName:identifier___ViewControllerProtocol
 {
     
