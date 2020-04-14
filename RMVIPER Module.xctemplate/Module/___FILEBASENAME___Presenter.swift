@@ -18,6 +18,7 @@ class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:id
     
 }
 
+// MARK: - Interactor Output
 extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol
 {
     
