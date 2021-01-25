@@ -10,7 +10,7 @@
 
 import Foundation
 
-//VIEW
+// VIEW
 protocol ___VARIABLE_productName:identifier___ViewControllerProtocol: class
 {
     var presenter: ___VARIABLE_productName:identifier___PresenterProtocol? { get set }
@@ -19,7 +19,7 @@ protocol ___VARIABLE_productName:identifier___ViewControllerProtocol: class
     
 }
 
-//INTERACTOR
+// INTERACTOR
 protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: class
 {
     var presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol? { get set }
@@ -34,7 +34,7 @@ protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol: class
     
 }
 
-//PRESENTER
+// PRESENTER
 protocol ___VARIABLE_productName:identifier___PresenterProtocol: class
 {
     var view: ___VARIABLE_productName:identifier___ViewControllerProtocol? { get set }
@@ -45,7 +45,7 @@ protocol ___VARIABLE_productName:identifier___PresenterProtocol: class
     
 }
 
-//ROUTER
+// ROUTER
 protocol ___VARIABLE_productName:identifier___WireframeProtocol: class
 {
     
