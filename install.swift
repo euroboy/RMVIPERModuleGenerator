@@ -5,66 +5,52 @@
 
 import Foundation
 
-let templateName = "RMVIPER Module.xctemplate"
-let destinationRelativePath = "/Users/dev/Library/Developer/Xcode/Templates"
+let destinationPath = "/Users/\(NSFullUserName())/Library/Developer/Xcode/Templates"
+let fm = FileManager.default
+let currentDir = fm.currentDirectoryPath
 
-func printInConsole(_ message:Any)
-{
-    print("====================================")
+func getTemplatesPaths() -> [String]? {
+    do {
+        let items = try fm.contentsOfDirectory(atPath: currentDir)
+        return items.filter { $0.contains(".xctemplate") }
+    } catch {
+        return nil
+    }
+}
+
+func copyTemplates() {
+    guard let templatePaths = getTemplatesPaths() else {
+        showMessage("Something went wrong :(")
+        return
+    }
+    for templatePath in templatePaths {
+        let source = currentDir + "/" + templatePath
+        let dest = destinationPath + "/" + templatePath
+        if !copyFiles(from: source, to: dest) {
+            showMessage("Something went wrong :(")
+            return
+        }
+    }
+    showMessage("Templates are installed successfully!")
+}
+
+func copyFiles(from source: String, to dest: String) -> Bool {
+    do {
+        let filelist = try fm.contentsOfDirectory(atPath: source)
+        try? fm.copyItem(atPath: source, toPath: dest)
+        for filename in filelist {
+            try? fm.copyItem(atPath: "\(source)/\(filename)", toPath: "\(dest)/\(filename)")
+        }
+        return true
+    } catch {
+        return false
+    }
+}
+
+func showMessage(_ message: String) {
+    print("===============================================")
     print("\(message)")
-    print("====================================")
+    print("===============================================")
 }
 
-func moveTemplate()
-{
-    let fileManager = FileManager.default
-    let destinationPath = bash(command: "xcode-select", arguments: ["--print-path"]).appending(destinationRelativePath)
-    do
-    {
-        if !fileManager.fileExists(atPath:"\(destinationPath)/\(templateName)")
-        {
-            try fileManager.copyItem(atPath: templateName, toPath: "\(destinationPath)/\(templateName)")
-            printInConsole("✅  Template installed succesfully 🎉. Enjoy it 🙂")
-
-        }
-        else
-        {
-            try fileManager.removeItem(atPath: "\(destinationPath)/\(templateName)")
-            try fileManager.copyItem(atPath: templateName, toPath: "\(destinationPath)/\(templateName)")
-            printInConsole("✅  Template already exists. So has been replaced succesfully 🎉. Enjoy it 🙂")
-        }
-    }
-    catch let error as NSError
-    {
-        printInConsole("❌  Ooops! Something went wrong 😡 : \(error.localizedFailureReason!)")
-    }
-}
-
-func shell(launchPath: String, arguments: [String]) -> String
-{
-    let task = Process()
-    task.launchPath = launchPath
-    task.arguments = arguments
-
-    let pipe = Pipe()
-    task.standardOutput = pipe
-    task.launch()
-
-    let data = pipe.fileHandleForReading.readDataToEndOfFile()
-    let output = String(data: data, encoding: String.Encoding.utf8)!
-    if output.count > 0
-    {
-        //remove newline character.
-        let lastIndex = output.index(before: output.endIndex)
-        return String(output[output.startIndex ..< lastIndex])
-    }
-    return output
-}
-
-func bash(command: String, arguments: [String]) -> String
-{
-    let whichPathForCommand = shell(launchPath: "/bin/bash", arguments: [ "-l", "-c", "which \(command)" ])
-    return shell(launchPath: whichPathForCommand, arguments: arguments)
-}
-
-moveTemplate()
+copyTemplates()
