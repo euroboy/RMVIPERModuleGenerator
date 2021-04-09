@@ -10,19 +10,15 @@
 
 import UIKit
 
-class ___VARIABLE_productName:identifier___ViewController: UIViewController
+class ___VARIABLE_productName:identifier___ViewController: UIViewController, Instantiable
 {
     var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
     
-    // MARK: - Outlets
-    
-    // MARK: - Life Cycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
     }
-    
 }
 
 // MARK: - Presenter Output
