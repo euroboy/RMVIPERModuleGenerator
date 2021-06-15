@@ -20,7 +20,7 @@ protocol ___VARIABLE_productName:identifier___ViewControllerProtocol: UIViewCont
 }
 
 // INTERACTOR
-protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: class
+protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: AnyObject
 {
     var presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol? { get set }
     
@@ -28,14 +28,14 @@ protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: class
     
 }
 
-protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol: class
+protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol: AnyObject
 {
     // INTERACTOR -> PRESENTER
     
 }
 
 // PRESENTER
-protocol ___VARIABLE_productName:identifier___PresenterProtocol: class
+protocol ___VARIABLE_productName:identifier___PresenterProtocol: AnyObject
 {
     var view: ___VARIABLE_productName:identifier___ViewControllerProtocol? { get set }
     var interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol? { get set }
@@ -46,7 +46,7 @@ protocol ___VARIABLE_productName:identifier___PresenterProtocol: class
 }
 
 // ROUTER
-protocol ___VARIABLE_productName:identifier___WireframeProtocol: class
+protocol ___VARIABLE_productName:identifier___WireframeProtocol: AnyObject
 {
     
 }

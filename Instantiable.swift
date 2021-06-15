@@ -1,6 +1,6 @@
 import UIKit
 
-protocol Instantiable: class {
+protocol Instantiable: AnyObject {
     static func instantiate() -> Self
 }
 
