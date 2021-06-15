@@ -11,31 +11,26 @@
 import UIKit
 
 // PRESENTER -> VIEW
-protocol ___VARIABLE_productName:identifier___ViewControllerProtocol: UIViewController
-{
+protocol ___VARIABLE_productName:identifier___ViewControllerProtocol: UIViewController {
     
 }
 
 // PRESENTER -> INTERACTOR
-protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: AnyObject
-{
+protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: AnyObject {
     
 }
 
 // INTERACTOR -> PRESENTER
-protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol: AnyObject
-{
+protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol: AnyObject {
     
 }
 
 // VIEW -> PRESENTER
-protocol ___VARIABLE_productName:identifier___PresenterProtocol: AnyObject
-{
+protocol ___VARIABLE_productName:identifier___PresenterProtocol: AnyObject {
     
 }
 
 // PRESENTER -> ROUTER
-protocol ___VARIABLE_productName:identifier___WireframeProtocol: AnyObject
-{
+protocol ___VARIABLE_productName:identifier___WireframeProtocol: AnyObject {
     
 }

@@ -10,10 +10,9 @@
 
 import UIKit
 
-class ___VARIABLE_productName:identifier___Wireframe: ___VARIABLE_productName:identifier___WireframeProtocol
-{
-    static func assemblyModule() -> UIViewController
-    {
+class ___VARIABLE_productName:identifier___Wireframe: ___VARIABLE_productName:identifier___WireframeProtocol {
+    
+    static func assemblyModule() -> UIViewController {
         let viewController = ___VARIABLE_productName:identifier___ViewController.instantiate()
         let presenter = ___VARIABLE_productName:identifier___Presenter()
         let interactor = ___VARIABLE_productName:identifier___Interactor()
