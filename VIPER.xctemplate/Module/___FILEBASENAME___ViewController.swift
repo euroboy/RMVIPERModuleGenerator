@@ -10,19 +10,12 @@
 
 import UIKit
 
-class ___VARIABLE_productName:identifier___ViewController: UIViewController, Instantiable
-{
-    var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
+class ___VARIABLE_productName:identifier___ViewController: UIViewController, Instantiable {
     
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        
-    }
+    var presenter: ___VARIABLE_productName:identifier___PresenterProtocol?
 }
 
 // MARK: - Presenter Output
-extension ___VARIABLE_productName:identifier___ViewController: ___VARIABLE_productName:identifier___ViewControllerProtocol
-{
+extension ___VARIABLE_productName:identifier___ViewController: ___VARIABLE_productName:identifier___ViewControllerProtocol {
     
 }

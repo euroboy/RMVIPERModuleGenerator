@@ -10,43 +10,27 @@
 
 import UIKit
 
-// VIEW
-protocol ___VARIABLE_productName:identifier___ViewControllerProtocol: UIViewController
-{
-    var presenter: ___VARIABLE_productName:identifier___PresenterProtocol? { get set }
-    
-    // PRESENTER -> VIEW
+// PRESENTER -> VIEW
+protocol ___VARIABLE_productName:identifier___ViewControllerProtocol: UIViewController {
     
 }
 
-// INTERACTOR
-protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: class
-{
-    var presenter: ___VARIABLE_productName:identifier___InteractorOutputProtocol? { get set }
-    
-    // PRESENTER -> INTERACTOR
+// PRESENTER -> INTERACTOR
+protocol ___VARIABLE_productName:identifier___InteractorInputProtocol: AnyObject {
     
 }
 
-protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol: class
-{
-    // INTERACTOR -> PRESENTER
+// INTERACTOR -> PRESENTER
+protocol ___VARIABLE_productName:identifier___InteractorOutputProtocol: AnyObject {
     
 }
 
-// PRESENTER
-protocol ___VARIABLE_productName:identifier___PresenterProtocol: class
-{
-    var view: ___VARIABLE_productName:identifier___ViewControllerProtocol? { get set }
-    var interactor: ___VARIABLE_productName:identifier___InteractorInputProtocol? { get set }
-    var wireFrame: ___VARIABLE_productName:identifier___WireframeProtocol? { get set }
-    
-    // VIEW -> PRESENTER
+// VIEW -> PRESENTER
+protocol ___VARIABLE_productName:identifier___PresenterProtocol: AnyObject {
     
 }
 
-// ROUTER
-protocol ___VARIABLE_productName:identifier___WireframeProtocol: class
-{
+// PRESENTER -> ROUTER
+protocol ___VARIABLE_productName:identifier___WireframeProtocol: AnyObject {
     
 }
